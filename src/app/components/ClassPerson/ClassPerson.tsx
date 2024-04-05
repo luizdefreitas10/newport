@@ -21,5 +21,5 @@ export default function ClassPerson() {
         </pre>
       </div>
     </div>
-  );
+  )
 }
