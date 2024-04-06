@@ -5,21 +5,22 @@ import HelloComponent from '../components/HelloComponent/HelloComponent'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center overflow-x-hidden">
+    <main className="flex flex-col items-center overflow-x-hidden">
       <Header />
-      <div className="flex flex-col ">
+      <div className="flex flex-col overflow-hidden">
         <div
-          className="flex h-full items-center justify-around w-screen"
-          style={{
-            height: `calc(-100px + 100vh)`,
-          }}
+          className="flex min-h-screen items-center justify-around w-screen"
+          // style={{
+          //   height: `calc(-100px + 100vh)`,
+          // }}
         >
           <HelloComponent />
           <ClassPerson />
         </div>
-        <div className="w-full h-auto bg-[#f8f8f8]">
+        <div className="w-full bg-[#f8f8f8]">
           <AboutMe />
         </div>
+        {/* <AboutMe /> */}
       </div>
     </main>
   )
