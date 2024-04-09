@@ -39,7 +39,7 @@ export default function AboutMe() {
             key={card.id}
             className="h-[110px] rounded-[10px] bg-white w-[30%] p-4 space-y-2 shadow-gray-400 shadow-md"
           >
-            <p className="text-[16px] text-[#6c82f2]">&quot{card.quote}&quot</p>
+            <p className="text-[16px] text-[#6c82f2]">{card.quote}</p>
             <p className="text-[12px] text-[#6c82f2] text-right">
               -{card.author}
             </p>
