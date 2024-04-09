@@ -18,11 +18,11 @@ export default function AboutMe() {
         </div>
         <div className="w-[60%]">
           <p className="text-[#f8f8f8] transform skew-y-3">
-            Hi, I'm Anurag Hazra, a self-taught passionate FrontEnd developer
+            Hi, Im Anurag Hazra, a self-taught passionate FrontEnd developer
             from India, currently working at Razorpay as a FrontEnd engineer.
-            I've been building stuff on the web since when I was in 6th
-            standard, I've made countless side projects and I also posses
-            magical powers of using react to build delightful user interfaces.
+            Ive been building stuff on the web since when I was in 6th standard,
+            Ive made countless side projects and I also posses magical powers of
+            using react to build delightful user interfaces.
           </p>
           <br />
           <p className="text-[#f8f8f8] transform skew-y-3">
@@ -39,7 +39,7 @@ export default function AboutMe() {
             key={card.id}
             className="h-[110px] rounded-[10px] bg-white w-[30%] p-4 space-y-2 shadow-gray-400 shadow-md"
           >
-            <p className="text-[16px] text-[#6c82f2]">"{card.quote}"</p>
+            <p className="text-[16px] text-[#6c82f2]">&quot{card.quote}&quot</p>
             <p className="text-[12px] text-[#6c82f2] text-right">
               -{card.author}
             </p>
