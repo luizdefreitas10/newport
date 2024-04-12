@@ -1,8 +1,9 @@
 export default function ClassPerson() {
   return (
+    // bg-gray-900 && text-gray-300
     <div className="w-screen md:w-auto flex justify-center">
-      <div className="w-[400px] md:w-auto bg-gray-900 p-4 rounded-lg shadow-lg z-10 overflow-hidden ml-[-20px] md:ml-0">
-        <pre className="font-mono text-sm text-gray-300">
+      <div className="w-[400px] lg:w-auto bg-white p-4 rounded-lg shadow-lg z-10 overflow-hidden ml-[-20px] md:ml-0">
+        <pre className="font-mono text-sm text-[#778bf2]">
           <code className="h-auto">
             {`class Person {
       constructor(name, age) {
@@ -23,3 +24,4 @@ export default function ClassPerson() {
     </div>
   )
 }
+// #778bf2
