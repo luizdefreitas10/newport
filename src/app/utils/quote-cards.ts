@@ -8,7 +8,7 @@ export const quoteCards = [
   {
     id: 2,
     quote:
-      'I know I’m not successful enough, but I’m passionate enough not to worry about success.',
+      "I am passionate about facing challenges and I believe that technology is a powerful tool to improve people's lives.",
     author: 'Luiz de Freitas',
   },
   {

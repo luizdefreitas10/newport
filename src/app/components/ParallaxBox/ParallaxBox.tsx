@@ -26,19 +26,19 @@ const ParallaxBox = () => {
 
   return (
     <div
-      className="m-8 relative h-screen overflow-hidden lg:h-auto lg:min-h-screen"
+      className="m-8 relative overflow-hidden"
       style={{
-        height: `calc(-100px + 100vh)`,
+        height: `calc(-350px + 100vh)`,
       }}
     >
       <h1 className="hidden lg:flex justify-center z-40 relative text-[31px] text-[#6c82f2] font-bold text-center my-12">
         Tecnologias
       </h1>
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-around">
         <h1 className="text-[31px] text-[#6c82f2] font-bold text-center my-12 lg:hidden">
           Tecnologias
         </h1>
-        <div className="w-[65%] flex gap-10 flex-wrap items-center justify-center">
+        <div className="w-[65%] mt-24 flex gap-10 flex-wrap items-center justify-center">
           {tecnologyData.map((tecnology) => (
             <Link key={tecnology.id} href={tecnology.href} isExternal>
               <Image
@@ -71,13 +71,19 @@ const ParallaxBox = () => {
           <p className="text-[#c6d1fe] absolute top-1/2 right-[200px] text-xl mt-8">
             Javascript
           </p>
-          <p className="text-[#c6d1fe] absolute bottom-[150px] right-1/4 text-lg mt-8">
+          <p className="text-[#c6d1fe] absolute bottom-[350px] right-[600px] text-lg mt-8">
             React
           </p>
-          <p className="text-[#c6d1fe] absolute top-[130px] right-[700px] text-lg mt-8">
+          <p className="text-[#c6d1fe] absolute top-[220px] right-[800px] text-lg mt-8">
+            Vercel
+          </p>
+          <p className="text-[#c6d1fe] absolute top-[130px] right-[400px] text-lg mt-8">
             Domain Driven Development
           </p>
-          <p className="text-[#c6d1fe] absolute bottom-[120px] right-1/2 text-lg mt-8">
+          <p className="text-[#c6d1fe] absolute top-[130px] left-[600px] text-lg mt-8">
+            mongoDB
+          </p>
+          <p className="text-[#c6d1fe] absolute bottom-[320px] right-1/2 text-lg mt-8">
             Nextjs
           </p>
           <p className="text-[#c6d1fe] absolute top-1/4 right-[150px] text-xl mt-8">
@@ -86,7 +92,7 @@ const ParallaxBox = () => {
           <p className="text-[#c6d1fe] absolute bottom-1/4 left-1/4 text-2xl mt-8">
             Docker
           </p>
-          <p className="text-[#c6d1fe] absolute top-1/4 left-1/2 text-lg mt-8">
+          <p className="text-[#c6d1fe] absolute top-1/4 right-1/4 text-lg mt-8">
             Clean Architecture
           </p>
           <p className="text-[#c6d1fe] absolute bottom-1/2 left-[20px] text-2xl mt-8">
@@ -95,8 +101,11 @@ const ParallaxBox = () => {
           <p className="text-[#c6d1fe] absolute top-1/4 left-1/4 text-xl mt-8">
             nextUi
           </p>
-          <p className="text-[#c6d1fe] absolute bottom-[100px] left-[200px] text-3xl mt-8">
+          <p className="text-[#c6d1fe] absolute bottom-[350px] left-[300px] text-3xl mt-8">
             TailwindCss
+          </p>
+          <p className="text-[#c6d1fe] absolute bottom-[250px] right-[300px] text-3xl mt-8">
+            PostgreeSQL
           </p>
         </div>
       </div>

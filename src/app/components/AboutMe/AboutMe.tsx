@@ -21,18 +21,24 @@ export default function AboutMe() {
         </div>
         <div className="w-[60%] p-8 lg:p-0 h-auto">
           <p className="text-[#f8f8f8] transform skew-y-3">
-            Hi, Im Anurag Hazra, a self-taught passionate FrontEnd developer
-            from India, currently working at Razorpay as a FrontEnd engineer.
-            Ive been building stuff on the web since when I was in 6th standard,
-            Ive made countless side projects and I also posses magical powers of
-            using react to build delightful user interfaces.
+            Hello! I'm Luiz de Freitas, an enthusiastic full stack web developer
+            committed to creating innovative and efficient solutions. I am
+            currently honing my skills at Trybe (www.betrybe.com), where I am
+            specializing in technologies such as TypeScript, React, Next.js,
+            Express, Sequelize, Python and Django, as well as mastering tools
+            such as Redux, React-toastify, React Hook Forms, Yup, Joi, CORS and
+            Styled-components.
           </p>
           <br />
           <p className="text-[#f8f8f8] transform skew-y-3">
-            I also love doing open source development, I actively maintain
-            various notable open source projects with over, 30k+ stars on GitHub
-            and 50m+ hits. It gives me a wonderful feeling of achievement and
-            joy which I cannot explain in words.
+            I am passionate about facing challenges and I believe that
+            technology is a powerful tool to improve people's lives. I am
+            constantly looking for opportunities to apply and expand my
+            knowledge on meaningful projects and collaborations. If you are
+            interested in discussing opportunities, collaborations or just want
+            to chat about technology and current web development trends, feel
+            free to contact me! I am always willing to learn, share and grow
+            together with the community.
           </p>
         </div>
       </div>
