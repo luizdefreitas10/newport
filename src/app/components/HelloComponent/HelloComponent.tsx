@@ -1,6 +1,6 @@
-import { Button } from '@nextui-org/react'
-import Image from 'next/image'
-import { TextGenerateEffect } from '../TextGenerateEffect/TextGenerateEffect'
+import { Button } from "@nextui-org/react";
+import Image from "next/image";
+import { TextGenerateEffect } from "../TextGenerateEffect/TextGenerateEffect";
 
 export default function HelloComponent() {
   return (
@@ -18,7 +18,7 @@ export default function HelloComponent() {
       </Button>
       <div className="flex space-x-8">
         <Image
-          src={'/githubicon.svg'}
+          src={"/githubicon.svg"}
           alt="github icon"
           width={28}
           height={28}
@@ -26,7 +26,7 @@ export default function HelloComponent() {
           priority
         />
         <Image
-          src={'/linkedinicon.svg'}
+          src={"/linkedinicon.svg"}
           alt="linkedin icon"
           width={28}
           height={28}
@@ -34,7 +34,7 @@ export default function HelloComponent() {
           priority
         />
         <Image
-          src={'/portfolioicon.svg'}
+          src={"/portfolioicon.svg"}
           alt="portfolio icon"
           width={28}
           height={28}
@@ -43,5 +43,5 @@ export default function HelloComponent() {
         />
       </div>
     </div>
-  )
+  );
 }

@@ -1,28 +1,28 @@
-import React, { useEffect, useRef } from 'react'
-import { Karla } from 'next/font/google'
-import Image from 'next/image'
-import { tecnologyData } from '../../utils/tecnologies'
-import { Link } from '@nextui-org/react'
+import React, { useEffect, useRef } from "react";
+import { Karla } from "next/font/google";
+import Image from "next/image";
+import { tecnologyData } from "../../utils/tecnologies";
+import { Link } from "@nextui-org/react";
 
-const karla = Karla({ subsets: ['latin'] })
+const karla = Karla({ subsets: ["latin"] });
 
 const ParallaxBox = () => {
-  const parallaxRef = useRef<HTMLDivElement>(null)
+  const parallaxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY
+      const scrollPosition = window.scrollY;
       if (parallaxRef.current) {
-        parallaxRef.current.style.transform = `translateY(${scrollPosition * 0.2}px)`
+        parallaxRef.current.style.transform = `translateY(${scrollPosition * 0.2}px)`;
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div
@@ -58,7 +58,7 @@ const ParallaxBox = () => {
         ref={parallaxRef}
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          transform: 'translateY(0)',
+          transform: "translateY(0)",
           height: `calc(-100px + 100vh)`,
         }}
       >
@@ -110,7 +110,7 @@ const ParallaxBox = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ParallaxBox
+export default ParallaxBox;

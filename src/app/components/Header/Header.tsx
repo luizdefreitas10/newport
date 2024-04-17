@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import {
   Link,
@@ -7,15 +7,15 @@ import {
   NavbarItem,
   NavbarMenuToggle,
   Switch,
-} from '@nextui-org/react'
-import Image from 'next/image'
+} from "@nextui-org/react";
+import Image from "next/image";
 
-import { useState } from 'react'
-import { SunIcon } from '../SunIcon/SunIcon'
-import { MoonIcon } from '../MoonIcon/MoonIcon'
+import { useState } from "react";
+import { SunIcon } from "../SunIcon/SunIcon";
+import { MoonIcon } from "../MoonIcon/MoonIcon";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
     <Navbar
@@ -24,18 +24,18 @@ export default function Header() {
       className="h-[93px] bg-[#f8f8f8] w-screen flex justify-between shadow-lg shadow-[#eeeeef]"
       position="static"
       classNames={{
-        wrapper: 'justify-center md:justify-around',
+        wrapper: "justify-center md:justify-around",
       }}
     >
       <NavbarMenuToggle
-        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         className="miniMobile:absolute miniMobile:left-12 md:hidden justify-start bg-transparent text-white mx-2"
       />
 
       <NavbarContent justify="center" className="flex">
         <Link href="/" className="mx-auto ">
           <Image
-            src={'/next.svg'}
+            src={"/next.svg"}
             alt="logoedsheader"
             width={100}
             height={100}
@@ -76,5 +76,5 @@ export default function Header() {
         />
       </NavbarContent>
     </Navbar>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 export const MoonIcon = (
   props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>,
 ) => (
@@ -16,4 +16,4 @@ export const MoonIcon = (
       fill="currentColor"
     />
   </svg>
-)
+);

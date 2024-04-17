@@ -1,24 +1,24 @@
-'use client'
+"use client";
 
-import { Image, Link } from '@nextui-org/react'
-import { projectsMock } from '../../utils/projects'
-import { useEffect, useState } from 'react'
+import { Image, Link } from "@nextui-org/react";
+import { projectsMock } from "../../utils/projects";
+import { useEffect, useState } from "react";
 
 interface Project {
-  id: number
-  name: string
-  src: string
-  resume: string
-  stacks: string[]
-  vercel: string
+  id: number;
+  name: string;
+  src: string;
+  resume: string;
+  stacks: string[];
+  vercel: string;
 }
 
 export default function Projects() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000)
-  }, [])
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
 
   return (
     <div className="lg:mt-[-60px] flex flex-col w-full h-auto items-center">
@@ -67,7 +67,7 @@ export default function Projects() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 // bg-[#f9f9f8]

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { quoteCards } from '@/app/utils/quote-cards'
-import Image from 'next/image'
+import { quoteCards } from "@/app/utils/quote-cards";
+import Image from "next/image";
 
 export default function AboutMe() {
   return (
@@ -12,7 +12,7 @@ export default function AboutMe() {
       <div className="w-full h-auto bg-gradient-to-br from-blue-500 to-blue-700 transform -skew-y-3 z-[10] p-12 flex items-center justify-evenly">
         <div className="mb-32 w-auto h-auto flex justify-center border-[#f8f8f8] border-4 rounded-full transform skew-y-3 overflow-hidden items-center">
           <Image
-            src={'/nobgprofile.webp'}
+            src={"/nobgprofile.webp"}
             alt="profile pic"
             width={204}
             height={204}
@@ -57,7 +57,7 @@ export default function AboutMe() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 /* eslint-disable react/no-unescaped-entities */

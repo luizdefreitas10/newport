@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Tabs,
   Tab,
@@ -6,9 +6,9 @@ import {
   CardBody,
   CardHeader,
   CardFooter,
-} from '@nextui-org/react'
-import { experiencesMock } from '@/app/utils/experiences'
-import Image from 'next/image'
+} from "@nextui-org/react";
+import { experiencesMock } from "@/app/utils/experiences";
+import Image from "next/image";
 
 export default function Experiences() {
   return (
@@ -60,5 +60,5 @@ export default function Experiences() {
         ))}
       </Tabs>
     </div>
-  )
+  );
 }
