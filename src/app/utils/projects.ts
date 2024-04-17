@@ -1,5 +1,38 @@
 export const projectsMock = [
   {
+    id: 22,
+    name: 'Copa das Torcidas',
+    src: '/muitomaisquevarzea.png',
+    resume:
+      'Um moderno e-commerce desenvolvido para venda de serviços de tecnologia. Utilizando as mais recentes tecnologias web, esta plataforma permite que usuários adquiram soluções como SaaS, gestão empresarial, integrações de API e muito mais!',
+    stacks: [
+      'HTML',
+      'CSS',
+      'React',
+      'Styled-components',
+      'React-Router-Dom',
+      'Toastify',
+    ],
+    vercel: 'https://muitomaisquevarzea.com/',
+  },
+  {
+    id: 45,
+    name: 'Trybe Futebol Clube - Full Stack App',
+    src: '/tfcimg.png',
+    resume:
+      'Esta é uma API RESTFULL desenvolvida através da arquitetura MSC (model, service, controller), e funciona como sistema de gerenciamento de vendas no formato dropshipping em que será possível criar, visualizar, deletar e atualizar produtos e vendas.',
+    stacks: [
+      'NodeJs',
+      'JavaScript',
+      'Express',
+      'Mocha',
+      'Chai',
+      'Sinon',
+      'Joi',
+    ],
+    vercel: 'https://github.com/luizdefreitas10/TFC-Full-Stack-App',
+  },
+  {
     id: 1,
     name: 'NinthGame',
     src: '/ninthgame.png',
@@ -29,32 +62,6 @@ export const projectsMock = [
       'Toastify',
     ],
     vercel: 'https://valcann-techsales.vercel.app/',
-  },
-  {
-    id: 4,
-    name: 'Blogs API',
-    src: '/blogsapi.webp',
-    resume:
-      'Esta é uma API e um banco de dados de gerenciamento de um blog, onde é possível buscar, criar, editar e deletar postagens. Seguindo a arquitetura MSC (model, service, controller) e os princípios REST, aplicação foi desenvolvida utilizando NodeJs e o pacote Sequelize para fazer um CRUD de posts.',
-    stacks: ['NodeJs', 'JavaScript', 'Express', 'Sequelize', 'Joi', 'MySQL'],
-    vercel: 'https://github.com/luizdefreitas10/blogs-api',
-  },
-  {
-    id: 5,
-    name: 'API Store Manager',
-    src: '/apistoremanager.png',
-    resume:
-      'Esta é uma API RESTFULL desenvolvida através da arquitetura MSC (model, service, controller), e funciona como sistema de gerenciamento de vendas no formato dropshipping em que será possível criar, visualizar, deletar e atualizar produtos e vendas.',
-    stacks: [
-      'NodeJs',
-      'JavaScript',
-      'Express',
-      'Mocha',
-      'Chai',
-      'Sinon',
-      'Joi',
-    ],
-    vercel: 'https://github.com/luizdefreitas10/store-manager-api',
   },
   {
     id: 6,
@@ -97,23 +104,6 @@ export const projectsMock = [
     vercel: 'https://github.com/luizdefreitas10/project-carshop',
   },
   {
-    id: 45,
-    name: 'Trybe Futebol Clube - Full Stack App',
-    src: '/tfcimg.png',
-    resume:
-      'Esta é uma API RESTFULL desenvolvida através da arquitetura MSC (model, service, controller), e funciona como sistema de gerenciamento de vendas no formato dropshipping em que será possível criar, visualizar, deletar e atualizar produtos e vendas.',
-    stacks: [
-      'NodeJs',
-      'JavaScript',
-      'Express',
-      'Mocha',
-      'Chai',
-      'Sinon',
-      'Joi',
-    ],
-    vercel: 'https://github.com/luizdefreitas10/TFC-Full-Stack-App',
-  },
-  {
     id: 31,
     name: 'Recipes App',
     src: '/apistoremanager.png',
@@ -129,23 +119,7 @@ export const projectsMock = [
     vercel: 'https://github.com/luizdefreitas10/recipes-app',
   },
   {
-    id: 22,
-    name: 'Copa das Torcidas',
-    src: '/muitomaisquevarzea.png',
-    resume:
-      'Um moderno e-commerce desenvolvido para venda de serviços de tecnologia. Utilizando as mais recentes tecnologias web, esta plataforma permite que usuários adquiram soluções como SaaS, gestão empresarial, integrações de API e muito mais!',
-    stacks: [
-      'HTML',
-      'CSS',
-      'React',
-      'Styled-components',
-      'React-Router-Dom',
-      'Toastify',
-    ],
-    vercel: 'https://muitomaisquevarzea.com/',
-  },
-  {
-    id: 14,
+    id: 4,
     name: 'Blogs API',
     src: '/blogsapi.webp',
     resume:
@@ -154,7 +128,7 @@ export const projectsMock = [
     vercel: 'https://github.com/luizdefreitas10/blogs-api',
   },
   {
-    id: 45,
+    id: 5,
     name: 'API Store Manager',
     src: '/apistoremanager.png',
     resume:
@@ -170,4 +144,13 @@ export const projectsMock = [
     ],
     vercel: 'https://github.com/luizdefreitas10/store-manager-api',
   },
+  // {
+  //   id: 14,
+  //   name: 'Bolão API',
+  //   src: '/apistoremanager.png',
+  //   resume:
+  //     'Esta é uma API e um banco de dados de gerenciamento de um blog, onde é possível buscar, criar, editar e deletar postagens. Seguindo a arquitetura MSC (model, service, controller) e os princípios REST, aplicação foi desenvolvida utilizando NodeJs e o pacote Sequelize para fazer um CRUD de posts.',
+  //   stacks: ['NodeJs', 'JavaScript', 'Express', 'Sequelize', 'Joi', 'MySQL'],
+  //   vercel: 'https://github.com/luizdefreitas10/blogs-api',
+  // },
 ]
