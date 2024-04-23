@@ -12,7 +12,7 @@ export default function HomeLayout({
       {children}
       {/* <AnimatedHelloBg /> */}
       <Image
-        src={"/polygonbg.svg"}
+        src={"/animatedshapes.svg"}
         alt=""
         fill
         priority

@@ -20,6 +20,10 @@ const config: Config = {
         miniMobile: "470px",
       },
     },
+    fontFamily: {
+      tacOne: ['Tac One', 'sans-serif'],
+      greatVibes: ['Great Vibes', 'sans-serif'],
+    },
   },
   darkMode: "class",
   plugins: [nextui()],

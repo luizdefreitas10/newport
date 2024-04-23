@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Tac One";
+  src: url("./fonts/TacOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  src: url("./fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

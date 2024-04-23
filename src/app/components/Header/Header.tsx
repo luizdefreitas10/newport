@@ -13,6 +13,9 @@ import Image from "next/image";
 import { useState } from "react";
 import { SunIcon } from "../SunIcon/SunIcon";
 import { MoonIcon } from "../MoonIcon/MoonIcon";
+import { Karla } from "next/font/google";
+
+const karla = Karla({ subsets: ["latin"] })
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -34,14 +37,7 @@ export default function Header() {
 
       <NavbarContent justify="center" className="flex">
         <Link href="/" className="mx-auto ">
-          <Image
-            src={"/next.svg"}
-            alt="logoedsheader"
-            width={100}
-            height={100}
-            quality={100}
-            priority
-          />
+          <h1 className={`font-tacOne font-bold text-[38px]`}>{`//`}</h1>
         </Link>
       </NavbarContent>
 

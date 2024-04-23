@@ -3,7 +3,9 @@
 import AboutMe from "../components/AboutMe/AboutMe";
 import { TabsDemo } from "../components/AnimatedTabs/TabsDemo";
 import ClassPerson from "../components/ClassPerson/ClassPerson";
+import Contact from "../components/Contact/Contact";
 import Experiences from "../components/Experiences/Experiences";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import HelloComponent from "../components/HelloComponent/HelloComponent";
 import ParallaxBox from "../components/ParallaxBox/ParallaxBox";
@@ -44,8 +46,9 @@ export default function Home() {
           {/* <Experiences /> */}
           <TabsDemo />
         </div>
-        <AboutMe />
       </div>
+      <Contact />
+      <Footer />
     </main>
   );
 }
