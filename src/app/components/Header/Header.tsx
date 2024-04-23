@@ -15,7 +15,7 @@ import { SunIcon } from "../SunIcon/SunIcon";
 import { MoonIcon } from "../MoonIcon/MoonIcon";
 import { Karla } from "next/font/google";
 
-const karla = Karla({ subsets: ["latin"] })
+const karla = Karla({ subsets: ["latin"] });
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

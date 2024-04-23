@@ -8,9 +8,7 @@ export function VortexDemo() {
         baseHue={2000}
         backgroundColor="green"
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-      >
-
-      </Vortex>
+      ></Vortex>
     </div>
   );
 }

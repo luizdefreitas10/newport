@@ -22,7 +22,7 @@ export default function Contact() {
             </h1>
           </div>
           <div className="ml-8">
-            <FaHandshake size={100}/>
+            <FaHandshake size={100} />
           </div>
           <div className="mb-8">
             {/* <div className="ml-8 flex items-center space-x-4">

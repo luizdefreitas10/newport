@@ -21,8 +21,8 @@ const config: Config = {
       },
     },
     fontFamily: {
-      tacOne: ['Tac One', 'sans-serif'],
-      greatVibes: ['Great Vibes', 'sans-serif'],
+      tacOne: ["Tac One", "sans-serif"],
+      greatVibes: ["Great Vibes", "sans-serif"],
     },
   },
   darkMode: "class",
