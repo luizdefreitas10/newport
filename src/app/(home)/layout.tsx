@@ -14,9 +14,16 @@ export default function HomeLayout({
       <Image
         src={"/animatedshapes.svg"}
         alt=""
-        fill
         priority
-        className="object-center object-cover pointer-events-none"
+        fill
+        className="hidden sm:flex sm:absolute sm:inset-0"
+      />
+      <Image
+        src={"/animatedshapesmobile.svg"}
+        alt=""
+        priority
+        fill
+        className="absolute inset-0 sm:hidden"
       />
     </div>
   );

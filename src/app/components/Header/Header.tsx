@@ -5,6 +5,8 @@ import {
   Navbar,
   NavbarContent,
   NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
   NavbarMenuToggle,
   Switch,
 } from "@nextui-org/react";
@@ -20,6 +22,15 @@ const karla = Karla({ subsets: ["latin"] });
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
+  const menuItems = [
+    "início",
+    "sobre",
+    "tecnologias",
+    "experiência",
+    "projetos",
+    "contato",
+  ];
+
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
@@ -27,13 +38,24 @@ export default function Header() {
       className="h-[93px] bg-[#f8f8f8] w-screen flex justify-between shadow-lg shadow-[#eeeeef]"
       position="static"
       classNames={{
+        base: "bg-black",
         wrapper: "justify-center md:justify-around",
       }}
     >
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="miniMobile:absolute miniMobile:left-12 md:hidden justify-start bg-transparent text-white mx-2"
+        className="absolute left-12 md:hidden justify-start bg-transparent text-black mx-2"
       />
+
+      <NavbarMenu className="mt-7">
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link className="w-full" color={"primary"} href="#" size="lg">
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
 
       <NavbarContent justify="center" className="flex">
         <Link href="/" className="mx-auto ">

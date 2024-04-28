@@ -9,7 +9,7 @@ export default function AboutMe() {
       <h1 className="text-[31px] text-[#6c82f2] font-bold text-center my-12">
         Sobre
       </h1>
-      <div className="w-full h-auto bg-gradient-to-br from-blue-500 to-blue-700 transform -skew-y-3 z-[10] p-12 flex items-center justify-evenly">
+      <div className="w-full h-auto bg-gradient-to-br from-blue-500 to-blue-700 transform -skew-y-3 z-[10] p-12 flex flex-col md:flex-row items-center justify-evenly">
         <div className="mb-32 w-auto h-auto flex justify-center border-[#f8f8f8] border-4 rounded-full transform skew-y-3 overflow-hidden items-center">
           <Image
             src={"/nobgprofile.webp"}
