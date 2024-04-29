@@ -41,3 +41,36 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Estilos para o scroll */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(to right, #4f46e5, #3da9fc, #00c9ff);  */
+  background: #1d4fd9;
+  border-radius: 16px;
+}
+
+.Toastify__toast--success {
+  background-color: #fff !important;
+}
+
+.Toastify__toast--success .Toastify__toast-icon {
+  background-color: #fff !important;
+  border-radius: 50%;
+}
+
+.Toastify__progress-bar--success {
+  background: #6b81f2 !important;
+}
+
+.Toastify__toast--success .Toastify__toast-icon > svg {
+  fill: #6b81f2 !important;
+  border-radius: 50%;
+}

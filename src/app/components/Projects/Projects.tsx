@@ -21,7 +21,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="lg:mt-[-60px] flex flex-col w-full h-auto items-center">
+    <div className="mt-[950px] tinyMobile:mt-28 lg:mt-[-60px] flex flex-col w-full h-auto items-center">
       <h1 className="flex justify-center z-40 relative text-[31px] text-[#6c82f2] font-bold text-center my-12">
         Projetos
       </h1>

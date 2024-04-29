@@ -18,6 +18,7 @@ const config: Config = {
       screens: {
         desktop: "1920px",
         miniMobile: "470px",
+        tinyMobile: "435px",
       },
     },
     fontFamily: {

@@ -37,7 +37,7 @@ export const Tabs = ({
   const [hovering, setHovering] = useState(false);
 
   return (
-    <>
+    <div className="h-[900px] w-full">
       <div
         className={cn(
           "flex flex-row items-center justify-start [perspective:1000px] relative overflow-hidden sm:overflow-hidden no-visible-scrollbar max-w-full w-full bg-[#f5f5f6] h-20 rounded-xl",
@@ -81,7 +81,7 @@ export const Tabs = ({
         hovering={hovering}
         className={cn("mt-32", contentClassName)}
       />
-    </>
+    </div>
   );
 };
 

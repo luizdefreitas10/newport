@@ -22,13 +22,6 @@ const karla = Karla({ subsets: ["latin"] });
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   const menuItems = [
     "início",
     "sobre",
@@ -40,6 +33,7 @@ export default function Header() {
 
   return (
     <Navbar
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       maxWidth="full"
       className="h-[93px] bg-[#f8f8f8] w-screen flex justify-between shadow-lg shadow-[#eeeeef]"
@@ -62,6 +56,7 @@ export default function Header() {
               color={"primary"}
               href={`#${item}`}
               size="lg"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {item}
             </Link>

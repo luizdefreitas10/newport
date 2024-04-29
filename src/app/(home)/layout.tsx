@@ -1,6 +1,6 @@
 import Image from "next/image";
-// import AnimatedHelloBg from "../components/AnimatedHelloBg/AnimatedHelloBg";
 import "../globals.css";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function HomeLayout({
   children,
@@ -10,7 +10,6 @@ export default function HomeLayout({
   return (
     <div className="flex flex-col bg-[#f8f8f8] w-screen min-h-screen">
       {children}
-      {/* <AnimatedHelloBg /> */}
       <Image
         src={"/animatedshapes.svg"}
         alt=""

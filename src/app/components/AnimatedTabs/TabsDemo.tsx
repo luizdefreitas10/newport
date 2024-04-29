@@ -41,7 +41,7 @@ export function TabsDemo() {
 
   return (
     <div
-      className="h-[51rem] md:h-[45rem] xl:h-[35rem] [perspective:1000px] relative flex flex-col mx-auto w-[80%] items-center
+      className="h-[64rem] sm:h-[51rem] md:h-[45rem] xl:h-[35rem] [perspective:1000px] relative flex flex-col mx-auto w-[80%] items-center
      justify-start mb-40 mt-10"
     >
       <h1 className="flex mx-auto z-40 relative text-[31px] text-[#6c82f2] font-bold text-center mb-8">
@@ -51,64 +51,3 @@ export function TabsDemo() {
     </div>
   );
 }
-
-//   const tabs = [
-//     {
-//       title: "Grupo Sina",
-//       value: "Grupo Sina",
-//       content: (
-//         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-//           <div className="flex justify-between w-full">
-//             <h1>Desenvolvedor Full Stack</h1>
-//             <h1>Setembro de 2023 - Até o momento</h1>
-//           </div>
-//           <h1 className="flex justify-start w-full mt-8">Grupo Sina</h1>
-//           <h1 className="text-[22px]">
-//             Empresas do mesmo grupo. Responsabilidades como criação de dashboard
-//             para controle de usuários e fluxos, sites jogos online como cassino,
-//             poker, crash, plataformas de apostas esportivas e e-commerce.
-//             Experiência com desenvolvimento full stack, frontend e backend,
-//             utilizando stacks como JavaScript, TypeScript, React, NextJs,
-//             NodeJs, Styled Components, Python, Django Rest Framework, e
-//             desenvolvimento de APIs RESTFull.
-//           </h1>
-//         </div>
-//       ),
-//     },
-//     {
-//       title: "Services",
-//       value: "services",
-//       content: (
-//         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-//           <p>Services tab</p>
-//         </div>
-//       ),
-//     },
-//     {
-//       title: "Playground",
-//       value: "playground",
-//       content: (
-//         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-//           <p>Playground tab</p>
-//         </div>
-//       ),
-//     },
-//     {
-//       title: "Content",
-//       value: "content",
-//       content: (
-//         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-//           <p>Content tab</p>
-//         </div>
-//       ),
-//     },
-//     {
-//       title: "Random",
-//       value: "random",
-//       content: (
-//         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-//           <p>Random tab</p>
-//         </div>
-//       ),
-//     },
-//   ];
