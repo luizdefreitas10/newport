@@ -57,7 +57,12 @@ export default function Header() {
       <NavbarMenu className="mt-7">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" color={"primary"} href={`#${item}`} size="lg">
+            <Link
+              className="w-full"
+              color={"primary"}
+              href={`#${item}`}
+              size="lg"
+            >
               {item}
             </Link>
           </NavbarMenuItem>
