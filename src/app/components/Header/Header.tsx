@@ -22,12 +22,19 @@ const karla = Karla({ subsets: ["latin"] });
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const menuItems = [
     "início",
     "sobre",
     "tecnologias",
-    "experiência",
     "projetos",
+    "experiência",
     "contato",
   ];
 
@@ -50,7 +57,7 @@ export default function Header() {
       <NavbarMenu className="mt-7">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" color={"primary"} href="#" size="lg">
+            <Link className="w-full" color={"primary"} href={`#${item}`} size="lg">
               {item}
             </Link>
           </NavbarMenuItem>
@@ -68,22 +75,22 @@ export default function Header() {
         justify="center"
       >
         <NavbarItem>
-          <Link href="/">início</Link>
+          <Link href="#início">início</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/about">sobre</Link>
+          <Link href="#sobre">sobre</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/missions">tecnologias</Link>
+          <Link href="#tecnologias">tecnologias</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/teams">experiência</Link>
+          <Link href="#experiência">experiência</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/ranking">projetos</Link>
+          <Link href="#projetos">projetos</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/faq">contato</Link>
+          <Link href="#contato">contato</Link>
         </NavbarItem>
         <Switch
           defaultSelected

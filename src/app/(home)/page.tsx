@@ -14,7 +14,7 @@ import { SparklesCore } from "../components/SparklesComponent/test";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center overflow-x-hidden">
+    <main id="início" className="flex flex-col items-center overflow-x-hidden">
       <Header />
       <div className="flex flex-col overflow-hidden">
         <div
@@ -26,12 +26,19 @@ export default function Home() {
           <HelloComponent />
           <ClassPerson />
         </div>
-        <div className="w-full bg-[#f8f8f8]">
+        <div id="sobre" className="w-full bg-[#f8f8f8]">
           <AboutMe />
         </div>
-        <ParallaxBox />
-        <Projects />
-        <div className="mt-28 h-auto relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <div id="tecnologias">
+          <ParallaxBox />
+        </div>
+        <div id="projetos">
+          <Projects />
+        </div>
+        <div
+          id="experiência"
+          className="mt-28 h-auto relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+        >
           <div className="w-full absolute inset-0 h-auto">
             <SparklesCore
               id="tsparticlesfullpage"
@@ -43,11 +50,12 @@ export default function Home() {
               particleColor="#6b81f1"
             />
           </div>
-          {/* <Experiences /> */}
           <TabsDemo />
         </div>
       </div>
-      <Contact />
+      <div id="contato" className="w-screen flex justify-center items-center">
+        <Contact />
+      </div>
       <Footer />
     </main>
   );

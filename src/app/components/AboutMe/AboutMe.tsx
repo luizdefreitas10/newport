@@ -10,16 +10,15 @@ export default function AboutMe() {
         Sobre
       </h1>
       <div className="w-full h-auto bg-gradient-to-br from-blue-500 to-blue-700 transform -skew-y-3 z-[10] p-12 flex flex-col md:flex-row items-center justify-evenly">
-        <div className="mb-32 w-auto h-auto flex justify-center border-[#f8f8f8] border-4 rounded-full transform skew-y-3 overflow-hidden items-center">
+        <div className="mb-8 md:mb-32 w-auto h-auto flex justify-center border-[#f8f8f8] border-4 rounded-full transform skew-y-3 overflow-hidden items-center">
           <Image
             src={"/nobgprofile.webp"}
             alt="profile pic"
             width={204}
             height={204}
-            // className='flex-shrink'
           />
         </div>
-        <div className="w-[60%] p-8 lg:p-0 h-auto">
+        <div className="w-full md:w-[60%] p-8 lg:p-0 h-auto">
           <p className="text-[#f8f8f8] transform skew-y-3">
             Hello! I'm Luiz de Freitas, an enthusiastic full stack web developer
             committed to creating innovative and efficient solutions. I am
