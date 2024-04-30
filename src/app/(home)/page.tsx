@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import AboutMe from "../components/AboutMe/AboutMe";
 import { TabsDemo } from "../components/AnimatedTabs/TabsDemo";
 import ClassPerson from "../components/ClassPerson/ClassPerson";
@@ -12,6 +13,8 @@ import Projects from "../components/Projects/Projects";
 import { SparklesCore } from "../components/SparklesComponent/test";
 
 export default function Home() {
+  const { theme, setTheme } = useTheme();
+
   return (
     <main id="início" className="flex flex-col items-center overflow-x-hidden">
       <Header />
@@ -25,7 +28,7 @@ export default function Home() {
           <HelloComponent />
           <ClassPerson />
         </div>
-        <div id="sobre" className="w-full bg-[#f8f8f8]">
+        <div id="sobre" className="w-full bg-[#f8f8f8] dark:bg-[#181819]">
           <AboutMe />
         </div>
         <div id="tecnologias">
@@ -41,7 +44,7 @@ export default function Home() {
           <div className="flex w-full absolute inset-0 h-auto">
             <SparklesCore
               id="tsparticlesfullpage"
-              background="#f8f8f8"
+              background={theme === "light" ? "#f8f8f8" : "#181819"}
               minSize={0.6}
               maxSize={1.4}
               particleDensity={100}

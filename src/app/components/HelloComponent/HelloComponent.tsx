@@ -5,14 +5,14 @@ import { TextGenerateEffect } from "../TextGenerateEffect/TextGenerateEffect";
 export default function HelloComponent() {
   return (
     <div className="bg-transparent w-auto h-auto z-10">
-      <p className="text-[#383838] text-[16px] mb-[-15px] text-center lg:text-left">
+      <p className="text-[#383838] dark:text-[#f9f8f9] text-[16px] mb-[-15px] text-center lg:text-left">
         Olá, eu sou
       </p>
       <TextGenerateEffect
         words="LUIZ DE FREITAS"
-        className="text-[#383838] text-[32px] tinyMobile:text-[38px] sm:text-[46px] font-black text-center lg:text-left"
+        className="text-[#383838] dark:text-[#f9f8f9] text-[32px] tinyMobile:text-[38px] sm:text-[46px] font-black text-center lg:text-left"
       />
-      <h1 className="text-[#383838] text-[18px] sm:text-[20px] text-center lg:text-left">
+      <h1 className="text-[#383838] dark:text-[#f9f8f9] text-[18px] sm:text-[20px] text-center lg:text-left">
         FULLSTACK WEB DEVELOPER
       </h1>
       <Button

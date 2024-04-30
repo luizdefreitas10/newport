@@ -2,8 +2,8 @@ export default function ClassPerson() {
   return (
     // bg-gray-900 && text-gray-300
     <div className="w-full md:w-auto flex justify-center items-center">
-      <div className="w-[400px] sm:w-auto bg-white p-4 rounded-lg shadow-lg z-10 overflow-hidden sm:ml-[-20px] md:ml-0">
-        <pre className="font-mono text-[12px] sm:text-sm text-[#778bf2]">
+      <div className="w-[400px] sm:w-auto bg-white dark:bg-[#222223] p-4 rounded-lg shadow-lg z-10 overflow-hidden sm:ml-[-20px] md:ml-0">
+        <pre className="font-mono text-[12px] sm:text-sm text-[#778bf2] dark:text-[#f9f8f9]">
           <code className="h-auto">
             {`class Person {
       constructor(name, age) {

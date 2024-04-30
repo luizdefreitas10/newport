@@ -8,7 +8,7 @@ export default function HomeLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col bg-[#f8f8f8] w-screen min-h-screen">
+    <div className="flex flex-col dark:bg-[#181819] bg-[#f8f8f8] w-screen min-h-screen">
       {children}
       <Image
         src={"/animatedshapes.svg"}

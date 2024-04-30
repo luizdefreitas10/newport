@@ -22,14 +22,14 @@ export default function Projects() {
 
   return (
     <div className="mt-[950px] tinyMobile:mt-28 lg:mt-[-60px] flex flex-col w-full h-auto items-center">
-      <h1 className="flex justify-center z-40 relative text-[31px] text-[#6c82f2] font-bold text-center my-12">
+      <h1 className="flex justify-center z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center my-12">
         Projetos
       </h1>
-      <div className="flex w-[80%] justify-evenly gap-16 bg-[#f9f9f8] h-auto flex-wrap">
+      <div className="flex w-[80%] justify-evenly gap-16 bg-[#f9f9f8] dark:bg-[#181819] h-auto flex-wrap">
         {projectsMock.map((project: Project) => (
           <div
             key={project.id}
-            className="flex justify-between bg-[#f9f9f8] rounded-xl flex-col h-auto w-[300px] flex-wrap shadow-lg"
+            className="flex justify-between bg-[#f9f9f8] dark:bg-[#222223] rounded-xl flex-col h-auto w-[300px] flex-wrap shadow-lg"
           >
             <Link href={project.vercel} isExternal>
               <Image
@@ -43,7 +43,9 @@ export default function Projects() {
               />
             </Link>
             <div className="flex justify-between items-center py-8 px-4">
-              <h1 className="text-[#565756] text-[18px]">{project.name}</h1>
+              <h1 className="text-[#565756] dark:text-[#f8f8f8] text-[18px]">
+                {project.name}
+              </h1>
               <div className="flex gap-2">
                 {/* <Image
                   src="/githubicon.svg"

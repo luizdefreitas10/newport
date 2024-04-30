@@ -10,7 +10,7 @@ export function TabsDemo() {
       title: exp.company,
       value: exp.company,
       content: (
-        <div className="w-full overflow-hidden relative h-auto rounded-2xl p-8 text-xl text-black bg-[#fff] shadow-lg">
+        <div className="w-full overflow-hidden relative h-auto rounded-2xl p-8 text-xl text-black dark:text-[#f8f8f8] bg-[#fff] dark:bg-[#222223] shadow-lg">
           <div className="flex justify-between w-full">
             <h1 className="text-[18px]">{exp.role}</h1>
             <h1 className="text-[16px]">{exp.workingDate}</h1>
@@ -44,7 +44,7 @@ export function TabsDemo() {
       className="h-[64rem] sm:h-[51rem] md:h-[45rem] xl:h-[35rem] [perspective:1000px] relative flex flex-col mx-auto w-[80%] items-center
      justify-start mb-40 mt-10"
     >
-      <h1 className="flex mx-auto z-40 relative text-[31px] text-[#6c82f2] font-bold text-center mb-8">
+      <h1 className="flex mx-auto z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center mb-8">
         Experiência
       </h1>
       <Tabs tabs={tabs} />

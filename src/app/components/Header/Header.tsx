@@ -12,15 +12,21 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SunIcon } from "../SunIcon/SunIcon";
 import { MoonIcon } from "../MoonIcon/MoonIcon";
 import { Karla } from "next/font/google";
+import { useTheme } from "next-themes";
 
 const karla = Karla({ subsets: ["latin"] });
 
 export default function Header() {
+  const { theme, setTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    console.log(theme);
+  }, [theme]);
 
   const menuItems = [
     "início",
@@ -36,7 +42,7 @@ export default function Header() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       maxWidth="full"
-      className="h-[93px] bg-[#f8f8f8] w-screen flex justify-between shadow-lg shadow-[#eeeeef]"
+      className="h-[93px] bg-[#f8f8f8] dark:bg-[#222223] w-screen flex justify-between shadow-lg dark:shadow-sm shadow-[#eeeeef] dark:shadow-black"
       position="static"
       classNames={{
         base: "bg-black",
@@ -45,7 +51,7 @@ export default function Header() {
     >
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="absolute left-12 md:hidden justify-start bg-transparent text-black mx-2"
+        className="absolute left-12 md:hidden justify-start bg-transparent text-black dark:text-white mx-2"
       />
 
       <NavbarMenu className="mt-7">
@@ -53,7 +59,7 @@ export default function Header() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               className="w-full"
-              color={"primary"}
+              color={theme === "light" ? "primary" : "foreground"}
               href={`#${item}`}
               size="lg"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -62,6 +68,15 @@ export default function Header() {
             </Link>
           </NavbarMenuItem>
         ))}
+        <Switch
+          className="md:hidden"
+          defaultSelected
+          size="lg"
+          color="primary"
+          startContent={<SunIcon />}
+          endContent={<MoonIcon />}
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+        />
       </NavbarMenu>
 
       <NavbarContent justify="center" className="flex">
@@ -75,22 +90,34 @@ export default function Header() {
         justify="center"
       >
         <NavbarItem>
-          <Link href="#início">início</Link>
+          <Link href="#início" className="dark:text-[#e8e8e9]">
+            início
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#sobre">sobre</Link>
+          <Link href="#sobre" className="dark:text-[#e8e8e9]">
+            sobre
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#tecnologias">tecnologias</Link>
+          <Link href="#tecnologias" className="dark:text-[#e8e8e9]">
+            tecnologias
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#experiência">experiência</Link>
+          <Link href="#experiência" className="dark:text-[#e8e8e9]">
+            experiência
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#projetos">projetos</Link>
+          <Link href="#projetos" className="dark:text-[#e8e8e9]">
+            projetos
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#contato">contato</Link>
+          <Link href="#contato" className="dark:text-[#e8e8e9]">
+            contato
+          </Link>
         </NavbarItem>
         <Switch
           defaultSelected
@@ -98,6 +125,7 @@ export default function Header() {
           color="primary"
           startContent={<SunIcon />}
           endContent={<MoonIcon />}
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         />
       </NavbarContent>
     </Navbar>
