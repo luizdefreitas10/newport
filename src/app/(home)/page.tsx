@@ -41,7 +41,7 @@ export default function Home() {
           id="experiência"
           className="mt-28 h-auto relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
         >
-          <div className="flex w-full absolute inset-0 h-auto">
+          <div className="flex w-full absolute inset-0">
             <SparklesCore
               id="tsparticlesfullpage"
               background={theme === "light" ? "#f8f8f8" : "#181819"}

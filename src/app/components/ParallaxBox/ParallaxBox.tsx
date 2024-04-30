@@ -35,10 +35,10 @@ const ParallaxBox = () => {
         Tecnologias
       </h1>
       <div className="h-[81rem] tinyMobile:h-[50rem] absolute inset-0 z-10 flex flex-col items-center justify-around">
-        <h1 className="text-[31px] text-[#6c82f2] font-bold text-center my-12 lg:hidden">
+        <h1 className="text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center my-12 lg:hidden">
           Tecnologias
         </h1>
-        <div className="w-[65%] mt-0 flex gap-10 flex-wrap items-center justify-center">
+        <div className="w-[65%] mt-0 mb-24 flex gap-10 flex-wrap items-center justify-center">
           {tecnologyData.map((tecnology) => (
             <Link key={tecnology.id} href={tecnology.href} isExternal>
               <Image

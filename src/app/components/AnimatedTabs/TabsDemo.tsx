@@ -41,7 +41,7 @@ export function TabsDemo() {
 
   return (
     <div
-      className="h-[64rem] sm:h-[51rem] md:h-[45rem] xl:h-[35rem] [perspective:1000px] relative flex flex-col mx-auto w-[80%] items-center
+      className="h-[59rem] sm:h-[51rem] md:h-[45rem] xl:h-[35rem] [perspective:1000px] relative flex flex-col mx-auto w-[80%] items-center
      justify-start mb-40 mt-10"
     >
       <h1 className="flex mx-auto z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center mb-8">

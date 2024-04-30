@@ -61,11 +61,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-[81%] bg-[#f8f8f8] dark:bg-[#181819] flex flex-col my-8 mb-32">
-      <h1 className="flex mx-auto z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center mb-28">
+    <div className="w-[81%] bg-[#f8f8f8] dark:bg-[#181819] flex flex-col my-8">
+      <h1 className="flex mx-auto z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center mb-8 sm:mb-28">
         Contato
       </h1>
-      <div className="flex relative w-full h-auto">
+      <div className="flex relative w-full h-auto sm:mb-28">
         <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl p-4 shadow-xl">
           <div className="hidden 2xl:flex 2xl:flex-col 2xl:justify-between 2xl:w-[700px] 2xl:h-[350px] 2xl:bg-gradient-to-br 2xl:from-blue-500 2xl:to-blue-700 2xl:rounded-xl">
             <div className="mt-8">
