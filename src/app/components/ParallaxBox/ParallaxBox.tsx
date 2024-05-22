@@ -38,7 +38,7 @@ const ParallaxBox = () => {
         <h1 className="text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center my-12 lg:hidden">
           Tecnologias
         </h1>
-        <div className="bg-[#f8f8f8] w-[65%] mt-0 sm:mb-24 flex gap-10 flex-wrap items-center justify-center">
+        <div className="bg-[#f8f8f8] dark:bg-[#191818] w-[65%] mt-0 sm:mb-24 flex gap-10 flex-wrap items-center justify-center">
           {tecnologyData.map((tecnology) => (
             <Link key={tecnology.id} href={tecnology.href} isExternal>
               <Image
