@@ -34,7 +34,7 @@ export default function Home() {
         </div>
         <div
           id="tecnologias"
-          className="bg-black sm:mb-4 sm:overflow-y-hidden w-full h-[750px]"
+          className="sm:mb-4 sm:overflow-y-hidden w-full h-[750px]"
         >
           <ParallaxBox />
           {/* <h1 className="hidden lg:flex justify-center z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center my-12">

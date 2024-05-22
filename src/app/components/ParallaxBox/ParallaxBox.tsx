@@ -26,7 +26,7 @@ const ParallaxBox = () => {
 
   return (
     <div
-      className="m-8 relative h-full bg-red-400"
+      className="m-8 relative h-full"
       style={{
         // height: `calc(-350px + 100vh)`,
       }}
