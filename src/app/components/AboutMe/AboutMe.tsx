@@ -23,7 +23,7 @@ export default function AboutMe() {
       >
         <div className="mb-8 md:mb-32 w-auto h-auto flex justify-center border-[#f8f8f8] border-4 rounded-full transform skew-y-3 overflow-hidden items-center">
           <Image
-            src={"/nobgprofile.webp"}
+            src={"/nobgprofile.png"}
             alt="profile pic"
             width={204}
             height={204}

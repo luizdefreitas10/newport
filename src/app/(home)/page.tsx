@@ -11,6 +11,7 @@ import HelloComponent from "../components/HelloComponent/HelloComponent";
 import ParallaxBox from "../components/ParallaxBox/ParallaxBox";
 import Projects from "../components/Projects/Projects";
 import { SparklesCore } from "../components/SparklesComponent/test";
+import Tecnologies from "../components/Tecnologies/Tecnologies";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -31,8 +32,15 @@ export default function Home() {
         <div id="sobre" className="w-full bg-[#f8f8f8] dark:bg-[#181819]">
           <AboutMe />
         </div>
-        <div id="tecnologias">
+        <div
+          id="tecnologias"
+          className="bg-black sm:mb-4 sm:overflow-y-hidden w-full h-[750px]"
+        >
           <ParallaxBox />
+          {/* <h1 className="hidden lg:flex justify-center z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center my-12">
+            Tecnologias
+          </h1> */}
+          {/* <Tecnologies /> */}
         </div>
         <div id="projetos">
           <Projects />
