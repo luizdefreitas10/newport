@@ -40,6 +40,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .header-transition {
+    transition: transform 0.5s ease-in-out;
+  }
 }
 
 /* Estilos para o scroll */

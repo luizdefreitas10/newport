@@ -23,6 +23,23 @@ const karla = Karla({ subsets: ["latin"] });
 export default function Header() {
   const { theme, setTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setShowHeader(false); // Esconde o header ao rolar para baixo
+      } else {
+        setShowHeader(true); // Mostra o header ao rolar para cima
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   useEffect(() => {
     console.log(theme);
@@ -42,8 +59,8 @@ export default function Header() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       maxWidth="full"
-      className="h-[93px] bg-[#f8f8f8] dark:bg-[#222223] w-screen flex justify-between shadow-lg dark:shadow-sm shadow-[#eeeeef] dark:shadow-black"
-      position="static"
+      className={`header-transition ${showHeader ? "" : "translate-y-[-100%]"} h-[93px] bg-[#f8f8f8] dark:bg-[#222223] w-screen flex justify-between shadow-lg dark:shadow-sm shadow-[#eeeeef] dark:shadow-black fixed z-[50]`}
+      // position="static"
       classNames={{
         base: "bg-black",
         wrapper: "justify-center md:justify-around",

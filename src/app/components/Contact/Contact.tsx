@@ -33,14 +33,17 @@ export default function Contact() {
 
     setIsLoading(true);
 
-    const rawResponse = await fetch("http://localhost:3000/api/submit", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
+    const rawResponse = await fetch(
+      "https://portfoliodev-kappa.vercel.app/api/submit",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(goofleFormObject),
       },
-      body: JSON.stringify(goofleFormObject),
-    });
+    );
 
     try {
       const content = await rawResponse.json();

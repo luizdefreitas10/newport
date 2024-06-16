@@ -20,12 +20,7 @@ export default function Home() {
     <main id="início" className="flex flex-col items-center overflow-x-hidden">
       <Header />
       <div className="flex flex-col overflow-hidden">
-        <div
-          className="flex flex-col lg:flex-row min-h-screen items-center justify-evenly lg:justify-around w-screen"
-          // style={{
-          //   height: `calc(-100px + 100vh)`,
-          // }}
-        >
+        <div className="flex flex-col lg:flex-row min-h-screen items-center justify-evenly lg:justify-around w-screen">
           <HelloComponent />
           <ClassPerson />
         </div>
@@ -37,10 +32,6 @@ export default function Home() {
           className="sm:mb-4 sm:overflow-y-hidden w-full h-[750px]"
         >
           <ParallaxBox />
-          {/* <h1 className="hidden lg:flex justify-center z-40 relative text-[31px] text-[#6c82f2] dark:text-[#f8f8f8] font-bold text-center my-12">
-            Tecnologias
-          </h1> */}
-          {/* <Tecnologies /> */}
         </div>
         <div id="projetos">
           <Projects />
@@ -49,7 +40,7 @@ export default function Home() {
           id="experiência"
           className="mt-28 h-auto relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
         >
-          <div className="flex w-full absolute inset-0">
+          <div className="flex w-full pb-40 tinyMobile:mb-0 absolute inset-0 overflow-x-hidden">
             <SparklesCore
               id="tsparticlesfullpage"
               background={theme === "light" ? "#f8f8f8" : "#181819"}
