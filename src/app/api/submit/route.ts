@@ -56,7 +56,7 @@ export async function POST(req: Request, res: Response) {
     return new Response(JSON.stringify({ data: appendResponse.data }));
   } catch (e: any) {
     console.log(e);
-    return new Response(JSON.stringify({ error: "Something went wrong." }), {
+    return new Response(JSON.stringify({ error: `Something went wrong, ${e}` }), {
       status: 500,
     });
   }
