@@ -35,6 +35,7 @@ export default function Contact() {
 
     const rawResponse = await fetch(
       "https://portfoliodev-kappa.vercel.app/api/submit",
+      // "http://localhost:3000/api/submit",
       {
         method: "POST",
         headers: {
@@ -47,6 +48,7 @@ export default function Contact() {
 
     try {
       const content = await rawResponse.json();
+      console.log("content", content);
       toast.success("Sua mensagem foi enviada com sucesso!", {
         className: "bg-black",
       });

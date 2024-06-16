@@ -8,6 +8,7 @@ type SheetForm = {
 };
 
 export async function POST(req: Request, res: Response) {
+  console.log("executou");
   if (req.method !== "POST") {
     return new Response("Only POST requests allowed");
   }
