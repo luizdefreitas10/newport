@@ -28,7 +28,9 @@ export async function POST(req: Request, res: Response) {
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+        private_key: process.env.GOOGLE_PRIVATE_KEY?.split(String.raw`\n`).join(
+          "\n",
+        ),
       },
       scopes: [
         "https://www.googleapis.com/auth/drive",
@@ -56,8 +58,11 @@ export async function POST(req: Request, res: Response) {
     return new Response(JSON.stringify({ data: appendResponse.data }));
   } catch (e: any) {
     console.log(e);
-    return new Response(JSON.stringify({ error: `Something went wrong, ${e}` }), {
-      status: 500,
-    });
+    return new Response(
+      JSON.stringify({ error: `Something went wrong, ${e}` }),
+      {
+        status: 500,
+      },
+    );
   }
 }
