@@ -5,7 +5,7 @@ export const experiencesMock = [
     company: "Grupo Sina",
     workingDate: "Setembro de 2023 - Até o momento",
     description:
-      "Criação de landing pages promocionais voltadas para marketing digital, dashboards e aplicações web utilizando o NextJs, NestJs, Clean Architecture e as linguagens de programação JavaScript e TypeScript. Criação de APIS REST utilizando NestJs e Clean Architecture. Deploy de aplicações web.",
+      "Criação de landing pages promocionais voltadas para marketing digital, dashboards e aplicações web utilizando o NextJs, NextUI e TypeScript. Deploy e criação de APIS REST utilizando NestJs e Clean Architecture.",
     tecnologies: [
       "JavaScript",
       "TypeScript",
