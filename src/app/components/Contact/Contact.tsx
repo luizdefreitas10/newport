@@ -8,6 +8,8 @@ import { FormEvent, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTheme } from "next-themes";
+import { database } from "@/app/utils/firebaseConfig";
+import { ref, set } from "firebase/database";
 
 export default function Contact() {
   const [userName, setUserName] = useState<string>("");
@@ -25,7 +27,7 @@ export default function Contact() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const goofleFormObject = {
+    const formData = {
       userName,
       userEmail,
       userMessage,
@@ -33,34 +35,19 @@ export default function Contact() {
 
     setIsLoading(true);
 
-    const rawResponse = await fetch(
-      "https://portfoliodev-kappa.vercel.app/api/submit",
-      // "http://localhost:3000/api/submit",
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(goofleFormObject),
-      },
-    );
-
     try {
-      const content = await rawResponse.json();
-      console.log("content", content);
+      const newMessageRef = ref(database, "messages/" + Date.now());
+      await set(newMessageRef, formData);
+
       toast.success("Sua mensagem foi enviada com sucesso!", {
         className: "bg-black",
       });
       setUserName("");
       setUserEmail("");
       setUserMessage("");
-      setIsLoading(false);
     } catch (error) {
-      toast.error("Erro ao processar a resposta do servidor.");
-      setUserName("");
-      setUserEmail("");
-      setUserMessage("");
+      toast.error("Erro ao enviar a mensagem.");
+    } finally {
       setIsLoading(false);
     }
   };

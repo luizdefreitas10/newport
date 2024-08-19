@@ -5,7 +5,7 @@ export const experiencesMock = [
     company: "Grupo Sina",
     workingDate: "Setembro de 2023 - Até o momento",
     description:
-      "Empresas do mesmo grupo. Responsabilidades como criação de dashboard para controle de usuários e fluxos, sites jogos online como cassino, poker, crash, plataformas de apostas esportivas e e-commerce. Experiência com desenvolvimento full stack, frontend e backend, utilizando stacks como JavaScript, TypeScript, React, NextJs, NodeJs, Styled Components, Python, Django Rest Framework, e desenvolvimento de APIs RESTFull.",
+      "Criação de landing pages promocionais voltadas para marketing digital, dashboards e aplicações web utilizando o NextJs, NestJs, Clean Architecture e as linguagens de programação JavaScript e TypeScript. Criação de APIS REST utilizando NestJs e Clean Architecture. Deploy de aplicações web.",
     tecnologies: [
       "JavaScript",
       "TypeScript",

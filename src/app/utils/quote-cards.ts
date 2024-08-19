@@ -2,18 +2,19 @@ export const quoteCards = [
   {
     id: 1,
     quote:
-      "I'm a fullstack web developer with 2 years of experience in the field of web development.",
+      "Sou um desenvolvedor fullstack com 2 anos de experiência na área de desenvolvimento web.",
     author: "Luiz de Freitas",
   },
   {
     id: 2,
     quote:
-      "I am passionate about facing challenges and I believe that technology is a powerful tool to improve people's lives.",
+      "Sou apaixonado por enfrentar desafios e acredito que a tecnologia é uma ferramenta poderosa para melhorar a vida das pessoas.",
     author: "Luiz de Freitas",
   },
   {
     id: 3,
-    quote: "Creativity is the driver of an unstoppable train called Passion.",
+    quote:
+      "Paixão e dedicação são chaves fundamentais para o crescimento profissional.",
     author: "Luiz de Freitas",
   },
 ];

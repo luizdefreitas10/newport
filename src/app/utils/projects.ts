@@ -1,5 +1,21 @@
 export const projectsMock = [
   {
+    id: 20,
+    name: "QXUTE Bolão",
+    src: "/qxutebg.png",
+    resume:
+      "Uma plataforma pensada para trazer o público para a landing page, onde o usuário poderá se registrar para efetuar palpites e apostas sobre futebol e esportes em geral, sendo possível visualizar todos os palpites realizados, acertos e erros. Confira!",
+    stacks: [
+      "NextJs",
+      "Tailwind CSS",
+      "NextUi",
+      "NestJs",
+      "Clean Architecture",
+      "Toastify",
+    ],
+    vercel: "https://qxute.com.br/",
+  },
+  {
     id: 22,
     name: "Copa das Torcidas",
     src: "/muitomaisquevarzea.png",

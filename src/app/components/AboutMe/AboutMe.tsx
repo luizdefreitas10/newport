@@ -31,24 +31,27 @@ export default function AboutMe() {
         </div>
         <div className="w-full md:w-[60%] p-8 lg:p-0 h-auto">
           <p className="text-[#f8f8f8] transform skew-y-3">
-            Hello! I'm Luiz de Freitas, an enthusiastic full stack web developer
-            committed to creating innovative and efficient solutions. I am
-            currently honing my skills at Trybe (www.betrybe.com), where I am
-            specializing in technologies such as TypeScript, React, Next.js,
-            Express, Sequelize, Python and Django, as well as mastering tools
-            such as Redux, React-toastify, React Hook Forms, Yup, Joi, CORS and
-            Styled-components.
+            Olá! Sou Luiz de Freitas, um desenvolvedor full stack entusiasta e
+            comprometido em criar soluções inovadoras e eficientes,
+            especializado em tecnologias como TypeScript, React, Next.js,
+            NestJs, Prisma, Python e Django, além de dominar ferramentas como
+            Redux, React Hook Forms, Yup, Joi, CORS e TailwindCss.{" "}
           </p>
           <br />
           <p className="text-[#f8f8f8] transform skew-y-3">
-            I am passionate about facing challenges and I believe that
-            technology is a powerful tool to improve people's lives. I am
-            constantly looking for opportunities to apply and expand my
-            knowledge on meaningful projects and collaborations. If you are
-            interested in discussing opportunities, collaborations or just want
-            to chat about technology and current web development trends, feel
-            free to contact me! I am always willing to learn, share and grow
-            together with the community.
+            Minha experiência profissional me proporcionou uma base sólida em
+            desenvolvimento web, resolução de problemas e trabalho em equipe,
+            permitindo-me enfrentar desafios complexos com confiança.
+          </p>
+          <br />
+          <p className="text-[#f8f8f8] transform skew-y-3">
+            Sou apaixonado por enfrentar desafios e acredito que a tecnologia é
+            uma ferramenta poderosa para melhorar a vida das pessoas.
+          </p>
+          <br />
+          <p className="text-[#f8f8f8] transform skew-y-3">
+            Estou sempre disposto a aprender, compartilhar e crescer junto com a
+            comunidade.
           </p>
         </div>
       </div>
